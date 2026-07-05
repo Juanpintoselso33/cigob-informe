@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="es"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" sizes="192x192" href="/favicon.png"><link rel="apple-touch-icon" href="/favicon.png"><title>Macroeconomía · Informe de Coyuntura · CiGob</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&display=swap"><link rel="stylesheet" href="/dashboard.css"><link rel="stylesheet" href="/overrides.css"><link rel="stylesheet" href="/_assets/math.DfikvuT6.css"><script type="module" src="/_assets/hoisted.BI29dNDD.js"></script></head> <body>  <nav class="cg-nav"> <div class="cg-nav-inner"> <div class="cg-nav-left"> <a class="cg-nav-brand" href="https://www.cigob.org" target="_self"> <span class="cg-nav-logo"><img src="/cigob-icono.png" alt="CiGob"></span> <span class="cg-nav-titles"> <span class="cg-nav-title">CiGob</span> <span class="cg-nav-sub">Ciencias para gobernar</span> </span> </a> <a class="cg-nav-producto" href="/">Informe de Coyuntura</a> </div> <button class="cg-nav-burger" id="cg-nav-burger" aria-label="Secciones del informe" aria-expanded="false" aria-controls="cg-nav-links">☰</button> <div class="cg-nav-links" id="cg-nav-links"> <a href="/">Resumen</a><a href="/macro/" class="active" aria-current="page">Macro</a><a href="/politica/">Política</a><a href="/vida/">Vida cotidiana</a><a href="/gestion/">Gestión</a><a href="/espiritu/">Espíritu de época</a><a href="/#metodologia">Metodología</a> </div> </div> </nav> <script>
+<!DOCTYPE html><html lang="es"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" sizes="192x192" href="/favicon.png"><link rel="apple-touch-icon" href="/favicon.png"><title>Macroeconomía · Informe de Coyuntura · CiGob</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&display=swap"><link rel="stylesheet" href="/dashboard.css"><link rel="stylesheet" href="/overrides.css"><link rel="stylesheet" href="/_assets/math.DfikvuT6.css"><script type="module" src="/_assets/hoisted.DZ_HIB8L.js"></script></head> <body>  <nav class="cg-nav"> <div class="cg-nav-inner"> <div class="cg-nav-left"> <a class="cg-nav-brand" href="https://www.cigob.org" target="_self"> <span class="cg-nav-logo"><img src="/cigob-icono.png" alt="CiGob"></span> <span class="cg-nav-titles"> <span class="cg-nav-title">CiGob</span> <span class="cg-nav-sub">Ciencias para gobernar</span> </span> </a> <a class="cg-nav-producto" href="/">Informe de Coyuntura</a> </div> <button class="cg-nav-burger" id="cg-nav-burger" aria-label="Secciones del informe" aria-expanded="false" aria-controls="cg-nav-links">☰</button> <div class="cg-nav-links" id="cg-nav-links"> <a href="/">Resumen</a><a href="/macro/" class="active" aria-current="page">Macro</a><a href="/politica/">Política</a><a href="/vida/">Vida cotidiana</a><a href="/gestion/">Gestión</a><a href="/espiritu/">Espíritu de época</a><a href="/#metodologia">Metodología</a> </div> </div> </nav> <script>
   (function () {
     const nav = document.querySelector(".cg-nav");
     const btn = document.getElementById("cg-nav-burger");
@@ -71,7 +71,10 @@ El ITCM se reconstruye hacia atrás, mes a mes, con las mismas reglas de
         cálculo y <strong>sin ajustes del analista</strong>, y se compara contra  <strong>riesgo país (EMBI, invertido)</strong>: una medición externa e independiente que no
         alimenta al índice. Si el índice midiera algo real, ambas series deberían moverse
         juntas — sin ser idénticas.
-</p> <dl class="cg-modal-ficha"> <div><dt>Correlación (niveles)</dt><dd>-0,737</dd></div> <div><dt>Cambios mes a mes</dt><dd>0,024</dd></div> <div><dt>Muestra</dt><dd>30 meses</dd></div> </dl> <p class="cg-modal-h4">Por qué dos correlaciones</p> <p class="cg-modal-desc">
+</p> <dl class="cg-modal-ficha"> <div><dt>Correlación (niveles)</dt><dd>-0,737</dd></div> <div><dt>Cambios mes a mes</dt><dd>0,024</dd></div> <div><dt>Muestra</dt><dd>30 meses</dd></div> </dl> <p class="cg-modal-h4">Las dos series, en sus valores reales</p> <div id="cg-det-val-chart"></div> <p class="cg-formula-leyenda">
+Cada escala en su eje: el índice a la izquierda, el contraste externo a la derecha.
+        Pasá el cursor (o el dedo) por las curvas para ver el valor de cada mes.
+</p> <p class="cg-modal-h4">Por qué dos correlaciones</p> <p class="cg-modal-desc">
 La correlación de <strong>niveles</strong> compara las trayectorias completas: en un
         período dominado por una gran tendencia, tiende a dar alta "gratis". La de  <strong>cambios mes a mes</strong> es la prueba exigente — pregunta si las dos series
         aceleran y frenan al mismo ritmo, no solo si van para el mismo lado.
@@ -94,36 +97,4 @@ La muestra es corta (~30 meses) y cubre un período donde toda la economía se m
 </p> <p class="cg-modal-h4">Lectura</p> <p class="cg-modal-desc">Los tres pares propios dan el signo esperado y correlaciones fuertes: ITCM -0,74 con el riesgo país, ITCG +0,77 con el Merval en dólares, ITVC +0,46 con la confianza del consumidor. Las celdas cruzadas son del mismo orden (la gestión también correlaciona -0,88 con el riesgo país): en una muestra de ~30 meses en la que toda la economía se movió junta, la matriz separa parcialmente — se declara como límite, no se esconde.</p> <p class="cg-formula-leyenda">
 Correlaciones sobre las reconstrucciones mensuales, sin ajustes del analista, desde
         diciembre de 2023.
-</p> </template><script>
-    (function () {
-      const modal = document.getElementById("cg-det-modal");
-      if (!modal) return;
-      const body = document.getElementById("cg-det-body");
-      const abrir = (key) => {
-        const tpl = document.getElementById("cg-det-" + key);
-        if (!tpl) return;
-        body.innerHTML = "";
-        body.appendChild(tpl.content.cloneNode(true));
-        if (key === "cruz") {
-          const dest = body.querySelector("#cg-det-cruz-tabla");
-          const tabla = document.querySelector(".cg-cruz .cg-cruz-tabla");
-          if (dest && tabla) dest.appendChild(tabla.cloneNode(true));
-        }
-        modal.removeAttribute("hidden");
-        document.body.style.overflow = "hidden";
-      };
-      const cerrar = () => {
-        modal.setAttribute("hidden", "");
-        document.body.style.overflow = "";
-      };
-      for (const el of document.querySelectorAll("[data-det]")) {
-        el.addEventListener("click", () => abrir(el.dataset.det));
-        el.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); abrir(el.dataset.det); }
-        });
-      }
-      document.getElementById("cg-det-close").addEventListener("click", (e) => { e.stopPropagation(); cerrar(); });
-      modal.addEventListener("click", (e) => { if (e.target === modal) cerrar(); });
-      document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !modal.hasAttribute("hidden")) cerrar(); });
-    })();
-  </script>  </body></html>
+</p> </template><script type="application/json" id="cg-det-val-data">{"slug":"macro","indice":{"nombre":"ITCM (reconstrucción)","unidad":"puntos"},"externa":{"nombre":"riesgo país (EMBI)","unidad":"pb"},"pares":[["2023-12",27.8,1892],["2024-01",28.9,1942],["2024-02",33,1845],["2024-03",30.1,1557],["2024-04",30.8,1276],["2024-05",44.8,1300],["2024-06",37.3,1447],["2024-07",46.2,1531],["2024-08",41.9,1530],["2024-09",45.9,1382],["2024-10",50.8,1103],["2024-11",55.5,810],["2024-12",65.3,694],["2025-01",69.4,611],["2025-02",71.5,698],["2025-03",69.3,754],["2025-04",74.6,799],["2025-05",70.3,684],["2025-06",66.8,688],["2025-07",62.5,728],["2025-08",66.6,758],["2025-09",66.3,1090],["2025-10",55.8,989],["2025-11",51,630],["2025-12",53,601],["2026-01",50.6,550],["2026-02",45.3,521],["2026-03",51,587],["2026-04",48.7,562],["2026-05",57.3,521]]}</script>  </body></html>
